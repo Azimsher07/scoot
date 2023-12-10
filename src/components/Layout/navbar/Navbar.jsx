@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { Button, NavP } from "../../common";
 import { Logo } from "/public/icons/logo";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   // to change burger classes
   const [burger_class, setBurgerClass] = useState("burger-bar unclicked");
   const [menu_class, setMenuClass] = useState("menu hidden");
+  const [menu_bg_class, setMenuBgClass] = useState("menuBg hidden");
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   // toggle burger menu change
@@ -13,9 +15,11 @@ export const Navbar = () => {
     if (!isMenuClicked) {
       setBurgerClass("burger-bar clicked");
       setMenuClass("menu visible");
+      setMenuBgClass("menuBg visible");
     } else {
       setBurgerClass("burger-bar unclicked");
       setMenuClass("menu hidden");
+      setMenuBgClass("menuBg hidden");
     }
     setIsMenuClicked(!isMenuClicked);
   };
@@ -33,10 +37,24 @@ export const Navbar = () => {
               </div>
             </nav>
 
-            <div className={menu_class}></div>
+            <div className={menu_class}>
+              <NavLink to="/home">
+                <NavP>Home</NavP>
+              </NavLink>
+              <NavLink to="/about">
+                <NavP>About</NavP>
+              </NavLink>
+              <NavLink to="/location">
+                <NavP>Location</NavP>
+              </NavLink>
+              <NavLink to="/careers">
+                <NavP>Careers</NavP>
+              </NavLink>
+            </div>
+            <div className={menu_bg_class}> </div>
           </div>
 
-          <div className="absolute right-[50%] translate-x-[50%] md:static md:translate-x-0">
+          <div className="absolute z-[-2] right-[50%] translate-x-[50%] md:static md:translate-x-0">
             <Logo color={true} />
           </div>
 
@@ -45,9 +63,15 @@ export const Navbar = () => {
 
         <div className="hidden  md:block">
           <div className="dfCenter gap-[32px]  ">
-            <NavP>About</NavP>
-            <NavP>Location</NavP>
-            <NavP>Careers</NavP>
+            <NavLink to="/about">
+              <NavP>About</NavP>
+            </NavLink>
+            <NavLink to="/location">
+              <NavP>Location</NavP>
+            </NavLink>
+            <NavLink to="/careers">
+              <NavP>Careers</NavP>
+            </NavLink>
           </div>
         </div>
       </div>

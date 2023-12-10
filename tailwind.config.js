@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        hero: "url('/public/images/homeImages/heroImg.png')",
+      },
       fontFamily: {
         mf: "spaceMono",
         sf: "lexend",
@@ -22,6 +25,7 @@ export default {
           1: "#939CAA",
           2: "#E5ECF4",
           3: "#F2F5F9",
+          4: "#2E3A58",
         },
         wt: "#fff",
       },

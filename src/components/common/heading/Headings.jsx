@@ -36,3 +36,21 @@ export const Heading4 = ({ children, color = true }) => {
   }
   return <h4 className={style}>{children}</h4>;
 };
+export const Heading5 = ({ children, color = true }) => {
+  let style = "";
+  if (color) {
+    style = "text-gr  font-mf text-xl leading-7";
+  } else {
+    style = "text-wt  font-mf text-xl leading-7";
+  }
+  return <h4 className={style}>{children}</h4>;
+};
+export const Heading6 = ({ children, color = true }) => {
+  let style = "";
+  if (color) {
+    style = "text-gr  font-mf text-[32px] leading-7";
+  } else {
+    style = "text-wt  font-mf text-[32px] leading-7";
+  }
+  return <h4 className={style}>{children}</h4>;
+};

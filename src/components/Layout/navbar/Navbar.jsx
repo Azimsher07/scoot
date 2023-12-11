@@ -14,7 +14,7 @@ export const Navbar = () => {
   const updateMenu = () => {
     if (!isMenuClicked) {
       setBurgerClass("burger-bar clicked");
-      setMenuClass("menu visible");
+      setMenuClass(" visible menu");
       setMenuBgClass("menuBg visible");
     } else {
       setBurgerClass("burger-bar unclicked");
@@ -38,18 +38,23 @@ export const Navbar = () => {
             </nav>
 
             <div className={menu_class}>
-              <NavLink to="/home">
-                <NavP>Home</NavP>
-              </NavLink>
-              <NavLink to="/about">
-                <NavP>About</NavP>
-              </NavLink>
-              <NavLink to="/location">
-                <NavP>Location</NavP>
-              </NavLink>
-              <NavLink to="/careers">
-                <NavP>Careers</NavP>
-              </NavLink>
+              <div>
+                <div>
+                  <NavLink to="/home">
+                    <NavP>Home</NavP>
+                  </NavLink>
+                  <NavLink to="/about">
+                    <NavP>About</NavP>
+                  </NavLink>
+                  <NavLink to="/location">
+                    <NavP>Location</NavP>
+                  </NavLink>
+                  <NavLink to="/careers">
+                    <NavP>Careers</NavP>
+                  </NavLink>
+                </div>
+                <Button>Get Scootin</Button>
+              </div>
             </div>
             <div className={menu_bg_class}> </div>
           </div>

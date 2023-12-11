@@ -2,8 +2,8 @@ import {
   Hero,
   IconsUsed,
   ImagesUsed,
+  SignIn,
 } from "../../components/pages/HomeComponents";
-// import { IconsUsed } from "../../components/pages/HomeComponents/iconsUsed";
 
 export const Home = () => {
   return (
@@ -13,6 +13,7 @@ export const Home = () => {
         <IconsUsed />
         <ImagesUsed />
       </div>
+      <SignIn />
     </section>
   );
 };

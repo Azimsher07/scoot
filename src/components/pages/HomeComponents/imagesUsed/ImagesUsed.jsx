@@ -21,7 +21,7 @@ const data = [
 
 export const ImagesUsed = () => {
   return (
-    <div className="dfCol gap-[120px]">
+    <div className="dfCol gap-[120px] pb-[120px]">
       {data.map((box, i) => (
         <div key={i} className="dfCol gap-[56px]">
           <img src={box.img} className="rounded-full" alt="image" />

@@ -1,8 +1,8 @@
+import { SignIn } from "../../components/common";
 import {
   Hero,
   IconsUsed,
   ImagesUsed,
-  SignIn,
 } from "../../components/pages/HomeComponents";
 
 export const Home = () => {
@@ -13,7 +13,6 @@ export const Home = () => {
         <IconsUsed />
         <ImagesUsed />
       </div>
-      <SignIn />
     </section>
   );
 };

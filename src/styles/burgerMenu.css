@@ -33,6 +33,31 @@ nav {
   left: 0;
   z-index: 1;
   padding-top: 150px;
+  position: fixed;
+}
+
+.menuBg {
+  width: 40%;
+  height: 100vh;
+  background-color: #333a43;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  position: fixed;
+}
+
+.bar_1 {
+  position: fixed;
+}
+.bar_2 {
+  position: fixed;
+  margin-top: 15px;
+}
+.bar_3 {
+  position: fixed;
+  margin-top: 30px;
 }
 
 .menu > div {
@@ -49,17 +74,6 @@ nav {
   margin-bottom: 20px;
 }
 
-.menuBg {
-  width: 40%;
-  height: 100vh;
-  background-color: #333a43;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
 /* ------------- sliding menu ------------------ */
 .hidden {
   display: none;
@@ -72,17 +86,17 @@ nav {
 /* ----- animations--------- */
 /* clicked */
 .burger-bar.clicked:nth-child(1) {
-  transform: rotate(45deg) translate(0.75em, 1.25em);
+  transform: rotate(45deg) translate(0em, 1.25em);
   transition: ease-out 0.5s;
 }
 
 .burger-bar.clicked:nth-child(2) {
-  transform: scale(0.1);
+  transform: scale(0);
   transition: ease-out 0.5s;
 }
 
 .burger-bar.clicked:nth-child(3) {
-  transform: rotate(135deg) translate(-0.5em, 1em);
+  transform: rotate(135deg) translate(-0.05em, 1.3em);
   transition: ease-out 0.5s;
 }
 

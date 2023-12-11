@@ -31,9 +31,9 @@ export const Navbar = () => {
           <div className="block md:hidden ">
             <nav>
               <div className="burger-menu" onClick={updateMenu}>
-                <div className={burger_class}></div>
-                <div className={burger_class}></div>
-                <div className={burger_class}></div>
+                <div className={`bar_1  ${burger_class}`}></div>
+                <div className={`bar_2  ${burger_class}`}></div>
+                <div className={`bar_3  ${burger_class}`}></div>
               </div>
             </nav>
 

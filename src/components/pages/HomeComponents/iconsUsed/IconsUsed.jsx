@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading5, Paragraph } from "../../../common";
+import { Heading4, Paragraph } from "../../../common";
 
 const data = [
   {
@@ -26,7 +26,7 @@ export const IconsUsed = () => {
         <div key={i} className="dfCol dfCenter text-center  ">
           <img src={box.icon} alt="icon" />
           <div>
-            <Heading5>{box.title}</Heading5>
+            <Heading4>{box.title}</Heading4>
             <Paragraph>{box.text}</Paragraph>
           </div>
         </div>

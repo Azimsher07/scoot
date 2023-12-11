@@ -10,6 +10,8 @@ export default {
     extend: {
       backgroundImage: {
         hero: "url('/public/images/homeImages/heroImg.png')",
+        aboutHero: "url('/public/images/otherPages/heroOfOtherPages.png')",
+        aboutHeroSM: "url('/public/images/otherPages/aboutHeroSM.png')",
       },
       fontFamily: {
         mf: "spaceMono",
@@ -26,6 +28,7 @@ export default {
           2: "#E5ECF4",
           3: "#F2F5F9",
           4: "#2E3A58",
+          5: "#333A44",
         },
         wt: "#fff",
       },
@@ -33,7 +36,7 @@ export default {
       container: {
         center: true,
         screens: {
-          sm: "370px",
+          sm: "375px",
           md: "760px",
           xl: "1440px",
         },
@@ -43,6 +46,10 @@ export default {
   plugins: [
     function ({ addUtilities }) {
       const columnFuntion = {
+        ".smPadding": {
+          paddingLeft: "32px",
+          paddingRight: "32px",
+        },
         ".dfCenter": {
           display: "flex",
           justifyContent: "center",

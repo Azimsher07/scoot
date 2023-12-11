@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Heading6, Paragraph } from "../../../common";
+import { Button, Heading2, Paragraph } from "../../../common";
 
 const data = [
   {
@@ -26,7 +26,7 @@ export const ImagesUsed = () => {
         <div key={i} className="dfCol gap-[56px]">
           <img src={box.img} className="rounded-full" alt="image" />
           <div className="dfCol dfCenter gap-[32px] text-center">
-            <Heading6>{box.title}</Heading6>
+            <Heading2>{box.title}</Heading2>
             <Paragraph>{box.text}</Paragraph>
             <Button>Learn More</Button>
           </div>

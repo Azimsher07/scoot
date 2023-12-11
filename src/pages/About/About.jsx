@@ -1,5 +1,6 @@
 import React from "react";
 import { AboutHero, AboutInfo } from "../../components/pages/AboutComponents";
+import { OurThings } from "../../components/common";
 
 export const About = () => {
   return (
@@ -7,6 +8,8 @@ export const About = () => {
       <AboutHero>About</AboutHero>
       <div className="smPadding">
         <AboutInfo />
+        <OurThings>Our values</OurThings>
+        
       </div>
     </div>
   );

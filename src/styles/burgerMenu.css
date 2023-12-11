@@ -83,6 +83,10 @@ nav {
   display: inherit;
 }
 
+/* .unclicked {
+  display: inline-block !important;
+} */
+
 /* ----- animations--------- */
 /* clicked */
 .burger-bar.clicked:nth-child(1) {
@@ -102,6 +106,9 @@ nav {
 
 /* unclicked */
 .burger-bar.unclicked {
+  position: relative;
+  margin: 0;
+
   transform: rotate(0) translate(0);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }

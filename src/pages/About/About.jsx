@@ -1,5 +1,9 @@
 import React from "react";
-import { AboutHero, AboutInfo } from "../../components/pages/AboutComponents";
+import {
+  AboutHero,
+  AboutInfo,
+  FAQs,
+} from "../../components/pages/AboutComponents";
 import { OurThings } from "../../components/common";
 
 export const About = () => {
@@ -9,7 +13,7 @@ export const About = () => {
       <div className="smPadding">
         <AboutInfo />
         <OurThings>Our values</OurThings>
-        
+        <FAQs />
       </div>
     </div>
   );

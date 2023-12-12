@@ -1,5 +1,12 @@
 import React from "react";
+import { OurMission } from "../../components/pages/CareersComponent";
 
 export const Careers = () => {
-  return <div>Careers</div>;
+  return (
+    <section>
+      <div className="smPadding">
+        <OurMission />
+      </div>
+    </section>
+  );
 };

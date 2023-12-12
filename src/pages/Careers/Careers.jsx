@@ -1,5 +1,5 @@
 import React from "react";
-import { OurMission } from "../../components/pages/CareersComponent";
+import { Jobs, OurMission } from "../../components/pages/CareersComponent";
 import { OurThings } from "../../components/common";
 
 export const Careers = () => {
@@ -8,7 +8,7 @@ export const Careers = () => {
       <div className="smPadding">
         <OurMission />
         <OurThings>Why join us?</OurThings>
-        
+        <Jobs />
       </div>
     </section>
   );

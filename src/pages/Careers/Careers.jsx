@@ -7,8 +7,10 @@ export const Careers = () => {
     <section>
       <CommonHero>Careers</CommonHero>
       <div className="smPadding">
-        <OurMission />
-        <OurThings>Why join us?</OurThings>
+        <div className=" sm:mdPadding md:lgPadding lg:xlPadding">
+          <OurMission />
+          <OurThings>Why join us?</OurThings>
+        </div>
         <Jobs />
       </div>
     </section>

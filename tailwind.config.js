@@ -39,8 +39,8 @@ export default {
         center: true,
         screens: {
           sm: "375px",
-          md: "760px",
-          lg: "",
+          md: "700px",
+          lg: "1024",
           xl: "1440px",
         },
       },
@@ -52,6 +52,18 @@ export default {
         ".smPadding": {
           paddingLeft: "32px",
           paddingRight: "32px",
+        },
+        ".mdPadding": {
+          paddingLeft: "100px",
+          paddingRight: "100px",
+        },
+        ".lgPadding": {
+          paddingLeft: "165px",
+          paddingRight: "165px",
+        },
+        ".xlPadding": {
+          paddingLeft: "165px",
+          paddingRight: "165px",
         },
         ".dfCenter": {
           display: "flex",

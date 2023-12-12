@@ -10,7 +10,7 @@ export const About = () => {
   return (
     <div>
       <AboutHero>About</AboutHero>
-      <div className="smPadding">
+      <div className=" smPadding sm:mdPadding md:lgPadding lg:xlPadding">
         <AboutInfo />
         <OurThings>Our values</OurThings>
         <FAQs />

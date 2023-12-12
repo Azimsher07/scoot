@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <section className="">
       <Hero />
-      <div className="px-[32px]">
+      <div className=" smPadding sm:mdPadding md:lgPadding lg:xlPadding">
         <IconsUsed />
         <ImagesUsed />
       </div>

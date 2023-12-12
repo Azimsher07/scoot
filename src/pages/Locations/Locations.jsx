@@ -6,7 +6,7 @@ export const Locations = () => {
   return (
     <div>
       <CommonHero>Locations</CommonHero>
-      <div className="smPadding">
+      <div className="smPadding ">
         <WorldMap />
         <Massage />
       </div>

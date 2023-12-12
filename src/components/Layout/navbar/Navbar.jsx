@@ -26,9 +26,9 @@ export const Navbar = () => {
 
   return (
     <div className="dfBetween px-[30px] w-[100%]  md:px-[40px] lg:px-[165px] py-[22px]">
-      <div className="dfBetween gap-[60px] hidden md:flex  ">
+      <div className="dfBetween gap-[60px] hidden sm:flex  ">
         <div className="flex items-center sm:flex justify-between ">
-          <div className="block md:hidden ">
+          <div className="block sm:hidden ">
             <nav>
               <div className="burger-menu" onClick={updateMenu}>
                 <div className={`bar_1  ${burger_class}`}></div>
@@ -59,14 +59,14 @@ export const Navbar = () => {
             <div className={menu_bg_class}> </div>
           </div>
 
-          <div className="absolute z-[-2] right-[50%] translate-x-[50%] md:static md:translate-x-0">
+          <div className="absolute z-[-2] right-[50%] translate-x-[50%] sm:static sm:translate-x-0">
             <Logo color={true} />
           </div>
 
-          <div className="block md:hidden "></div>
+          <div className="block sm:hidden "></div>
         </div>
 
-        <div className="hidden  md:block">
+        <div className="hidden  sm:block">
           <div className="dfCenter gap-[32px]  ">
             <NavLink to="/about">
               <NavP>About</NavP>
@@ -81,7 +81,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <div className="hidden md:block">
+      <div className="hidden sm:block">
         <Button>Get Scootin</Button>
       </div>
     </div>

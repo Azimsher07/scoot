@@ -32,13 +32,16 @@ export const Jobs = () => {
   return (
     <div className="dfCol gap-[16px] mb-[120px]">
       {jobs.map((job, i) => (
-        <div key={i} className="bg-gr-3 dfCol  text-center p-[32px] ">
-          <Heading4>{job.job}</Heading4>
-          <Paragraph>{job.place}</Paragraph>
+        <div
+          key={i}
+          className="bg-gr-3 dfCol  text-center p-[32px] sm:dfRow sm:justify-between sm:items-center sm:text-left "
+        >
+          <div className="dfCol ">
+            <Heading4>{job.job}</Heading4>
+            <Paragraph>{job.place}</Paragraph>
+          </div>
           <div className="pt-[20px]">
-            <Button  className="w-[100%] ">
-              Apply
-            </Button>
+            <Button className="w-[100%] px-[60px]">Apply</Button>
           </div>
         </div>
       ))}

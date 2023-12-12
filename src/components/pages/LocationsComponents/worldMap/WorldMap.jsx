@@ -9,10 +9,20 @@ export const WorldMap = () => {
   return (
     <div className="my-[70px]">
       <div className="dfCol mb-[40px] ">
-        <img src={WorldMapSM} className="block md:hidden" alt="" />
-        <img src={WorldMapXL} className="hidden md:block" alt="" />
+        <img
+          src={WorldMapSM}
+          className="block sm:hidden"
+          alt="world map small "
+          loading="lazy"
+        />
+        <img
+          src={WorldMapXL}
+          className="hidden sm:block"
+          alt="world map big"
+          loading="lazy"
+        />
       </div>
-      <div className="dfCol gap-[16px]">
+      <div className="dfCol gap-[16px] sm:hidden">
         {cities.map((city, i) => (
           <div key={i} className="w-[100%] py-[22px] bg-[#FFF4DF]  dfCenter">
             <Heading3 className="opacity-[1]">{city}</Heading3>

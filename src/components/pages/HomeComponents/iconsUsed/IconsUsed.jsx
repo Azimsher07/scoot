@@ -23,7 +23,10 @@ export const IconsUsed = () => {
   return (
     <div className="dfCol gap-y-[50px] py-[120px]">
       {data.map((box, i) => (
-        <div key={i} className="dfCol dfCenter text-center  ">
+        <div
+          key={i}
+          className="dfCol dfCenter text-center sm:dfRow sm:gap-[80px] sm:text-left "
+        >
           <img src={box.icon} alt="icon" />
           <div>
             <Heading4>{box.title}</Heading4>

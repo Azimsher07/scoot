@@ -3,7 +3,7 @@ import { Button, Heading2, Paragraph } from "../../../common";
 
 export const Massage = () => {
   return (
-    <div className="dfCol items-center text-center gap-[32px] mb-[72px]">
+    <div className="dfCol items-center text-center gap-[32px] mb-[72px] sm:mdPadding md:lgPadding lg:xlPadding">
       <Heading2>Your City Not Listed?</Heading2>
       <Paragraph>
         If you’d like to see Scoot in your hometown, be sure to let us know. We

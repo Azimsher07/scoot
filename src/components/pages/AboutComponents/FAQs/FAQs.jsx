@@ -57,7 +57,7 @@ export const FAQs = () => {
             <AccordionItem key={i} className="p-[32px] pb-[8px] bg-gr-3 ">
               <AccordionItemHeading>
                 <AccordionItemButton className="mb-[24px] dfBetween">
-                  <Heading3>{item.name}</Heading3>
+                  <Heading4>{item.name}</Heading4>
                   <SlArrowDown className="text-yw text-2xl " />
                 </AccordionItemButton>
               </AccordionItemHeading>
@@ -76,7 +76,7 @@ export const FAQs = () => {
             <AccordionItem key={i} className="p-[32px] pb-[8px] bg-gr-3 ">
               <AccordionItemHeading>
                 <AccordionItemButton className="mb-[24px] dfBetween ">
-                  <Heading3>{item.name}</Heading3>
+                  <Heading4>{item.name}</Heading4>
                   <SlArrowDown className="text-yw text-2xl " />
                 </AccordionItemButton>
               </AccordionItemHeading>

@@ -1,6 +1,6 @@
 import React from "react";
 import { CommonHero } from "../../components/common";
-import { WorldMap } from "../../components/pages/LocationsComponents";
+import { Massage, WorldMap } from "../../components/pages/LocationsComponents";
 
 export const Locations = () => {
   return (
@@ -8,6 +8,7 @@ export const Locations = () => {
       <CommonHero>Locations</CommonHero>
       <div className="smPadding">
         <WorldMap />
+        <Massage />
       </div>
     </div>
   );

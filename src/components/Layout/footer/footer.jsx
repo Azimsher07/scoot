@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo } from "../../../../public/icons/logo";
+import { Logo } from "/public/icons/logo";
 import { NavLink } from "react-router-dom";
 import { Paragraph, SignIn } from "../../common";
 import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";

@@ -48,43 +48,47 @@ export const FAQs = () => {
         <Heading2>FAQs</Heading2>
       </div>
 
-      <Accordion allowZeroExpanded className="my-[50px]">
-        <div className="text-center mb-[32px]">
-          <Heading4>How it works</Heading4>
-        </div>
-        <div className="dfCol gap-[16px]">
-          {items1.map((item, i) => (
-            <AccordionItem key={i} className="p-[32px] pb-[8px] bg-gr-3 ">
-              <AccordionItemHeading>
-                <AccordionItemButton className="mb-[24px] dfBetween">
-                  <Heading4>{item.name}</Heading4>
-                  <SlArrowDown className="text-yw text-2xl " />
-                </AccordionItemButton>
-              </AccordionItemHeading>
-              <AccordionItemPanel className="bg-gr-3">
-                <Paragraph>{item.text}</Paragraph>
-              </AccordionItemPanel>
-            </AccordionItem>
-          ))}
+      <Accordion allowZeroExpanded className="my-[50px] dfCol lg:gap-[64px]">
+        <div className="lg:dfRow lg:justify-between">
+          <div className="text-center mb-[32px] ">
+            <Heading4>How it works</Heading4>
+          </div>
+          <div className="dfCol gap-[16px] lg:w-[600px]">
+            {items1.map((item, i) => (
+              <AccordionItem key={i} className="p-[32px] pb-[8px] bg-gr-3 ">
+                <AccordionItemHeading>
+                  <AccordionItemButton className="mb-[24px] dfBetween">
+                    <Heading4>{item.name}</Heading4>
+                    <SlArrowDown className="text-yw text-2xl " />
+                  </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="bg-gr-3">
+                  <Paragraph>{item.text}</Paragraph>
+                </AccordionItemPanel>
+              </AccordionItem>
+            ))}
+          </div>
         </div>
 
-        <div className="text-center my-[32px]">
-          <Heading4>Safe driving</Heading4>
-        </div>
-        <div className="dfCol gap-[16px]">
-          {items2.map((item, i) => (
-            <AccordionItem key={i} className="p-[32px] pb-[8px] bg-gr-3 ">
-              <AccordionItemHeading>
-                <AccordionItemButton className="mb-[24px] dfBetween ">
-                  <Heading4>{item.name}</Heading4>
-                  <SlArrowDown className="text-yw text-2xl " />
-                </AccordionItemButton>
-              </AccordionItemHeading>
-              <AccordionItemPanel className="bg-gr-3">
-                <Paragraph>{item.text}</Paragraph>
-              </AccordionItemPanel>
-            </AccordionItem>
-          ))}
+        <div className="lg:dfRow lg:justify-between">
+          <div className="text-center my-[32px]">
+            <Heading4>Safe driving</Heading4>
+          </div>
+          <div className="dfCol gap-[16px] lg:w-[600px]">
+            {items2.map((item, i) => (
+              <AccordionItem key={i} className="p-[32px] pb-[8px] bg-gr-3 ">
+                <AccordionItemHeading>
+                  <AccordionItemButton className="mb-[24px] dfBetween ">
+                    <Heading4>{item.name}</Heading4>
+                    <SlArrowDown className="text-yw text-2xl " />
+                  </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="bg-gr-3">
+                  <Paragraph>{item.text}</Paragraph>
+                </AccordionItemPanel>
+              </AccordionItem>
+            ))}
+          </div>
         </div>
       </Accordion>
     </div>

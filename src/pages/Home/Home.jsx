@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <section className="">
       <Hero />
-      <div className=" smPadding sm:mdPadding md:lgPadding lg:xlPadding">
+      <div className=" smPadding sm:mdPadding  lg:lgPadding">
         <IconsUsed />
         <ImagesUsed />
       </div>

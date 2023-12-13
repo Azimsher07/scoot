@@ -21,11 +21,11 @@ const data = [
 
 export const IconsUsed = () => {
   return (
-    <div className="dfCol gap-y-[50px] py-[120px]">
+    <div className="dfCol gap-y-[50px] py-[120px] md:dfRow md:gap-[30px]">
       {data.map((box, i) => (
         <div
           key={i}
-          className="dfCol dfCenter text-center sm:dfRow sm:gap-[80px] sm:text-left "
+          className="dfCol dfCenter text-center sm:dfRow sm:gap-[80px] sm:text-left md:dfCol md:items-start md:justify-start   "
         >
           <img src={box.icon} alt="icon" />
           <div>

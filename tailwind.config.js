@@ -9,11 +9,11 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('/public/images/homeImages/heroImg.png')",
-        aboutHero: "url('/public/images/otherPages/heroOfOtherPages.png')",
-        aboutHeroSM: "url('/public/images/otherPages/aboutHeroSM.png')",
-        oPHeroSM: "url('/public/images//otherPages/careerHero.png')",
-        oPHeroXL: "url('/public/images//otherPages/careerHeroBig.png')",
+        hero: "url('/images/homeImages/heroImg.png')",
+        aboutHero: "url('/images/otherPages/heroOfOtherPages.png')",
+        aboutHeroSM: "url('/images/otherPages/aboutHeroSM.png')",
+        oPHeroSM: "url('/images//otherPages/careerHero.png')",
+        oPHeroXL: "url('/images//otherPages/careerHeroBig.png')",
       },
       fontFamily: {
         mf: "spaceMono",

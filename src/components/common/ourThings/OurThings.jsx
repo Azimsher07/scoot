@@ -29,7 +29,7 @@ export const OurThings = ({ children }) => {
       <div className="text-center mb-[50px]">
         <Heading2>{children}</Heading2>
       </div>
-      <div className="dfCol gap-[50px] mb-[150px]">
+      <div className="dfCol gap-[50px] mb-[150px] lg:dfRow">
         {datas.map((data, i) => (
           <div key={i} className="dfCenter dfCol gap-[27px] text-center">
             <div className="dfCenter dfCol relative mb-[30px]">

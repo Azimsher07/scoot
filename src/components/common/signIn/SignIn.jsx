@@ -5,7 +5,7 @@ import { Heading2 } from "../heading";
 
 export const SignIn = () => {
   return (
-    <div className="bg-gr text-wt py-[88px] px-[32px] text-center dfCenter dfCol gap-[40px] lg:dfRow lg:justify-between lg:text-left">
+    <div className="bg-gr text-wt py-[88px] px-[32px] lg:px-[165px] text-center dfCenter dfCol gap-[40px] lg:dfRow lg:justify-between lg:text-left">
       <Heading2 color={false}>
         Sign up and <br className="hidden md:block" /> Scoot off today
       </Heading2>

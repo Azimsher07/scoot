@@ -7,7 +7,7 @@ const cities = ["New York", "London", "Jakarta", "Yokohama"];
 
 export const WorldMap = () => {
   return (
-    <div className="my-[70px]">
+    <div className="my-[70px] lg:xlPadding pt-[100px]">
       <div className="dfCol mb-[40px] ">
         <img
           src={WorldMapSM}

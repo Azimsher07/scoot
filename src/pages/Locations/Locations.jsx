@@ -6,7 +6,7 @@ export const Locations = () => {
   return (
     <div>
       <CommonHero>Locations</CommonHero>
-      <div className="smPadding ">
+      <div className="smPadding sm:px-[0]">
         <WorldMap />
         <Massage />
       </div>
